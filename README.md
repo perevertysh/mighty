@@ -1,33 +1,46 @@
+#Simple grader, providingsome buisness logic for add code in form and push it for check#
 
+for start app you need
 
-для запуска приложения необходимо:
+install nginx, gunicorn, node.js, npm
 
-установить nginx, gunicorn, node.js, npm
+install redis by docker:
 
-установить redis в docker контейнере:
+	sudo docker run -d -p 6379:6379 redis
 
-    sudo docker run -d -p 6379:6379 redis
+prepare enviroment file (.env) in dir 'mighty/':
+	
+	*postgres*	
+	DB_NAME='databasee name'
+	DB_USER='database username'
+	DB_PASSWORD='database username password'
+	DB_HOST='database host'
+	DB_PORT='database port'
+	*app*
+	HOST='your app host
+	DEBUG='luanch mode True/False'
+	MEDIA_ROOT=/var/www/'app name'/
+	PROJECT='app name'
+	SECRET_KEY='your secret key'
 
-подготовить файл с переменными окружения (.env) в директории mighty/
-
-выполнить команды из разных терминалов:
-подготовить файл с переменными окржуения (.env) в директории bin/:
-
+prepare enviroment file (.env) in dir bin/:
+	
+	PROJECT=*название проекта*
 	USERNAME=*ваше имя пользователя*	
 	
-создать виртуальное окружение python, установить зависимости из файла requirements.txt
+create python virtual enviroment, install dependencies from with pip requirements.txt
 
-выполнить команды (из виртуального окржуения) в разных окнах терминала:
+execute commands (from virtual environment) in different terminal windows:
 
-    python ./bin/start_app.py - скрипт, запускающий проект
-    python ./bin/start_celery.py - запуск celery приложения
+	python ./bin/start_app.py - luanch app
+	python ./bin/start_celery.py - luanch celery
 
-в start_app:
+with 'start_app' command:
 
-    создаются симлинки для конфигурации nginx,
-    задается директория для хранения файлов изображений в nginx
-    запуск nginx
-    сборка фронтенда (Vue.js)
-    сборка статики django
-    миграции django в БД
-    запуск gunicorn
+	symlinks are created for the nginx configuration,
+	sets the directory for storing image files in nginx
+	running nginx
+	building frontend (Vue.js)
+	building django statics
+	django migrations to db
+	gunicorn launch
