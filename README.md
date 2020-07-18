@@ -1,4 +1,4 @@
-#Simple grader, providingsome buisness logic for add code in form and push it for check
+# Simple grader, providingsome buisness logic for add code in form and push it for check
 
 for start app you need
 
