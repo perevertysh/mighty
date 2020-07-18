@@ -1,0 +1,12 @@
+/.idea/
+/staticfiles/
+/bin/.env
+/frontend/node_modules/
+/static/icons/
+/static/css/app.css
+/static/js/app.js
+/static/js/app.js.LICENSE.txt
+mighty.sqlite3
+mighty/__pycache__/
+checker/__pycache__/
+checker/migrations/__pycache__/

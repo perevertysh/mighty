@@ -1,0 +1,18 @@
+.tail {
+    background-color: #2c2c2c;
+    box-shadow: 0px 4px 10px rgba(20, 20, 20, 0.89);
+    border-radius: 2px;
+    margin: 2px auto;
+    width: auto;   
+
+    .row {
+        padding: 0 2px;
+        #info {
+            display: flex;
+            flex-direction: row;
+            font-size: medium;
+            font-weight: 200;
+            
+        }
+    }
+}

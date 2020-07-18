@@ -1,0 +1,83 @@
+.pagination {
+    font-size: large;
+    .page-item {
+        .page-link {
+            color: rgba($color:#68b6ce, $alpha: 0.89);
+            background-color: transparent;
+            border-color: transparent;
+        }
+        &.active {
+            .page-link {
+                color: #fdff6b;
+            }
+        }
+    }
+}
+
+.v-data-table th {
+    color: rgba($color:#68b6ce, $alpha: 0.89) !important;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px !important;
+  }
+  
+  .v-data-table td {
+    color: rgba($color:#68b6ce, $alpha: 0.89);
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px !important; 
+  }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 88vh;
+    .filter_col {
+        .btn {
+            color: rgba($color: #000000, $alpha: 0.89);
+            border-radius: 2px;
+            border-color: rgba($color: #000000, $alpha: 0.89);
+            background-color: #68b6ce;
+            margin-left: 20px;
+            margin-top: 2 px;
+            height: 38px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            &.select {
+                background-color: #F0F299;
+            }
+            #inline-form-input-sort {
+                max-width: 100%;
+            }
+        }
+        .filter-1 {
+            background-color: #68b6ce;
+            border: 1px solid rgba(0, 0, 0, 0.89);
+            box-sizing: border-box;
+            border-radius: 2px;
+            margin-top: auto;
+            padding: 5px;
+            font-family: "basis33";
+            #inline-form-input-sort {
+                max-width: 100%;
+            }
+        }
+    }
+    .answer_list {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        .answer_col {
+            min-width: auto;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+    }
+    .empty {
+        text-align: left;
+        font-size: 32px;
+        color: rgba($color: #000000, $alpha: 0.89);
+    }
+    .pagination {
+        margin-top: auto !important;
+    }
+}

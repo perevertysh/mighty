@@ -1,0 +1,74 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+@import 'node_modules/bootstrap-vue/src/icons.scss';
+@import 'answerlist.scss';
+@import 'answercard.scss';
+@import 'answerchecker.scss';
+
+@font-face {
+    font-family: "basis33";
+    src: url('/static/fonts/basis33.ttf') format('truetype');
+}
+
+body {
+    background-color: #1b1b1b;
+    font-family: "basis33";
+    color:#bfe5f1;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.navbar{
+    background-color: rgba($color:#000000, $alpha: 0.89);
+    
+    .navbar-brand {
+        background-color: #68b6ce;
+    }
+    .header-btn {
+        background-color: #68b6ce;
+        color:#000000;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .header-title {
+        color: #7bc916;
+        font-size: xx-large;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+.search-form {
+    background-color: #68b6ce;
+    color:#000000;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer  {
+    background-color: rgba($color:#000000, $alpha: 0.89);
+    color: #7cadc4;
+    margin-top: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+    display: flex;
+    
+    .footer-content {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .shared-icon {
+        position: absolute;
+        display: flex;
+        right: 30px;
+    }
+}
