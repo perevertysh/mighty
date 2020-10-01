@@ -25,8 +25,8 @@ prepare enviroment file (.env) in dir 'mighty/':
 
 prepare enviroment file (.env) in dir bin/:
 	
-	PROJECT=*название проекта*
-	USERNAME=*ваше имя пользователя*	
+	PROJECT=*project name*
+	USERNAME=*user name*	
 	
 create python virtual enviroment, install dependencies from with pip requirements.txt
 
