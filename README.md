@@ -28,7 +28,7 @@ prepare enviroment file (.env) in dir bin/:
 	PROJECT=*project name*
 	USERNAME=*user name*	
 	
-create python virtual enviroment, install dependencies from with pip requirements.txt
+create python virtual enviroment, install dependencies from requirements.txt with pip 
 
 execute commands (from virtual environment) in different terminal windows:
 
