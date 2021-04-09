@@ -32,8 +32,8 @@ create python virtual enviroment, install dependencies from requirements.txt wit
 
 execute commands (from virtual environment) in different terminal windows:
 
-	python ./bin/start_app.py - luanch app
-	python ./bin/start_celery.py - luanch celery
+	python ./bin/start_app.py - launch app
+	python ./bin/start_celery.py - launch celery
 
 with 'start_app' command:
 
